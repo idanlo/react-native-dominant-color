@@ -1,14 +1,20 @@
 
 {
-  "name": "react-native-dominant-color",
+  "name": "react-native-vibrant-color",
   "version": "1.0.0",
-  "description": "Simple library to extract the dominant color from an image in React Native",
+  "description": "A library to extract dominant colors from images in react-native",
+  "repository": {
+      "url": "https://github.com/idanlo/react-native-dominant-color",
+      "type": "github"
+  },
   "main": "index.js",
   "keywords": [
     "react-native",
+    "node-vibrant",
+    "vibrant-color",
     "dominant-color"
   ],
-  "author": "Hugo Sáez",
+  "author": "IdanLo",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"

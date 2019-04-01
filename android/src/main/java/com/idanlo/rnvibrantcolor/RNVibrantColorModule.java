@@ -1,4 +1,4 @@
-package cl.hasaezs.rndominantcolor;
+package com.idanlo.rnvibrantcolor;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -23,7 +23,7 @@ public class RNDominantColorModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "RNDominantColor";
+        return "RNVibrantColor";
     }
 
     private int calculateAvgColor(Bitmap bitmap, int pixelSpacing) {

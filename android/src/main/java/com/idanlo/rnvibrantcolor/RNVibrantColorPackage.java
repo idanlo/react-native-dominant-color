@@ -1,4 +1,4 @@
-package cl.hasaezs.rndominantcolor;
+package com.idanlo.rnvibrantcolor;
 
 import java.util.Arrays;
 import java.util.Collections;

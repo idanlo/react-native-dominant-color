@@ -1,4 +1,7 @@
 
+*NOTE: * This was forked from [hu9osaez](https://github.com/hu9osaez/react-native-dominant-color) to get support for promises
+which he did not release 
+
 # react-native-dominant-color
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 Extract the dominant colors of an image (Just for Android).
@@ -31,7 +34,7 @@ Extract the dominant colors of an image (Just for Android).
 ```javascript
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { colorsFromUrl } from 'react-native-dominant-color';
+import { colorsFromUrl } from 'react-native-vibrant-color';
 
 const imageUrl = 'https://source.unsplash.com/random/800x600';
 
@@ -57,11 +60,8 @@ class Example extends Component {
     }
 
     componentWillMount() {
-        let self = this;
-        colorsFromUrl(imageUrl, (err, colors) => {
-            if(!err) {
-                self.setState({ color: colors.averageColor });
-            }
+        colorsFromUrl(imageUrl).then(colors => {
+            self.setState({ color: colors.averageColor });
         });
     }
 

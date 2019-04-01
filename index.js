@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
-const { RNDominantColor } = NativeModules;
+const { RNVibrantColor } = NativeModules;
 
-export const colorsFromUrl = (url) => {
-  return RNDominantColor.colorsFromUrl(url);
-}
+export const colorsFromUrl = url => {
+    return RNVibrantColor.colorsFromUrl(url);
+};
