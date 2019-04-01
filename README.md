@@ -2,31 +2,31 @@
 *NOTE: * This was forked from [hu9osaez](https://github.com/hu9osaez/react-native-dominant-color) to get support for promises
 which he did not release 
 
-# react-native-dominant-color
+# react-native-vibrant-color
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 Extract the dominant colors of an image (Just for Android).
 
 ## Getting started
-`$ npm install react-native-dominant-color --save`
+`$ npm install react-native-vibrant-color --save`
 
 ### Mostly automatic installation
-`$ react-native link react-native-dominant-color`
+`$ react-native link react-native-vibrant-color`
 
 ### Manual installation
 
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import cl.hasaezs.rndominantcolor.RNDominantColorPackage;` to the imports at the top of the file
-  - Add `new RNDominantColorPackage()` to the list returned by the `getPackages()` method
+  - Add `import com.idanlo.rnvibrantcolor.RNVibrantColorPackage;` to the imports at the top of the file
+  - Add `new RNVibrantColorPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-dominant-color'
-  	project(':react-native-dominant-color').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-dominant-color/android')
+  	include ':react-native-vibrant-color'
+  	project(':react-native-vibrant-color').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-vibrant-color/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-dominant-color')
+      compile project(':react-native-vibrant-color')
   	```
 
 
@@ -78,4 +78,4 @@ class Example extends Component {
 
 ## API
 #### Methods
-* `colorsFromUrl(imageUrl, callback)`: Callback returns an object with the prominent colors from the image. Object properties are `averageColor`, `dominantColor`,  `vibrantColor`, `darkVibrantColor` and `lightVibrantColor`. If some color doesn't exist will return `#CCCCCC`.
+* `colorsFromUrl(imageUrl)`: Promise resolves an object with the prominent colors from the image. Object properties are `averageColor`, `dominantColor`,  `vibrantColor`, `darkVibrantColor` and `lightVibrantColor`. If some color doesn't exist will return `#CCCCCC`.
