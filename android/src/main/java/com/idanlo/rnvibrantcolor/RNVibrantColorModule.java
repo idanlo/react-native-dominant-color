@@ -11,11 +11,11 @@ import com.facebook.react.bridge.*;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
-public class RNDominantColorModule extends ReactContextBaseJavaModule {
+public class RNVibrantColorModule extends ReactContextBaseJavaModule {
 
     private final int defaultColor;
 
-    public RNDominantColorModule(ReactApplicationContext reactContext) {
+    public RNVibrantColorModule(ReactApplicationContext reactContext) {
         super(reactContext);
 
         this.defaultColor = Color.LTGRAY;

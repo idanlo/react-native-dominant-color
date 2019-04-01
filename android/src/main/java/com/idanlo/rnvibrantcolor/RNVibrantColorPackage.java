@@ -10,10 +10,10 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-public class RNDominantColorPackage implements ReactPackage {
+public class RNVibrantColorPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNDominantColorModule(reactContext));
+      return Arrays.<NativeModule>asList(new RNVibrantColorModule(reactContext));
     }
 
     // Deprecated from RN 0.47
